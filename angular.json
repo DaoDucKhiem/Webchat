@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Webchat"
+    }
+  },
+  "defaultProject": "Webchat",
+  "cli": {
+    "analytics": "d7aed50a-b092-4f4f-bc5c-b37e5fd9973e"
+  }
 }
