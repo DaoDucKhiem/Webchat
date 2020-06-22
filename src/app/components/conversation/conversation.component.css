@@ -1,0 +1,71 @@
+.conversation {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 1.5px;
+}
+
+.avatar {
+    margin-left: 24px;
+    margin-right: 10px;
+}
+
+.avatar div {
+    position: relative;
+}
+
+.avatar div > img{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.avatar div > span {
+    position: absolute;
+    left: 17px;
+    bottom: 1px;
+}
+
+.green-sphere {
+    height: 12px;
+    width: 12px;
+}
+
+.name, .last-message {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.name-conversation, .message-last {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    float: left;
+}
+
+.time, .amount {
+    font-size: 11px;
+    float: right;
+}
+
+.time {
+    color: #49576d;
+}
+
+.last-message span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+    overflow: hidden;
+}

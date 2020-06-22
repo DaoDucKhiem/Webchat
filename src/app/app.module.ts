@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { LeftSideNavigationBarComponent } from './components/left-side-navigation-bar/left-side-navigation-bar.component';
+import { SearchConversationComponent } from './components/search-conversation/search-conversation.component';
+import { ConversationComponent } from './components/conversation/conversation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SignInComponent
+    SignInComponent,
+    LeftSideNavigationBarComponent,
+    SearchConversationComponent,
+    ConversationComponent,
   ],
   imports: [
     BrowserModule,
