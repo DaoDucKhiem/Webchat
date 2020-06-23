@@ -35,7 +35,7 @@ export class ConversationComponent implements OnInit {
     time: "3:04",
     newMessage: "0"
   }, {
-    image: "../../../assets/images/Avatar/2.jpg",
+    image: "../../../assets/images/Avatar/1.jpg",
     name: "Nguyễn Văn Minh",
     status: "online",
     lastMessage: "hello",
