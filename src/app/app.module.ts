@@ -11,6 +11,7 @@ import { ConversationComponent } from './components/conversation/conversation.co
 import { HeaderMessageComponent } from './components/header-message/header-message.component';
 import { MessageComponent } from './components/message/message.component';
 import { SendMessageComponent } from './components/send-message/send-message.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SendMessageComponent } from './components/send-message/send-message.com
     HeaderMessageComponent,
     MessageComponent,
     SendMessageComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

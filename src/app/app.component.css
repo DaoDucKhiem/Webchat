@@ -21,12 +21,20 @@ app-left-side-navigation-bar {
 }
 
 .content-message-list {
+    display: flex;
     height: 85.4vh;
+}
+
+.about {
+    height: 100%;
+    width: 259px;
+    margin-left: 1px;
 }
 
 .list-message {
     position: relative;
     height: 100%;
+    width: 788px;
 }
 
 .message {
