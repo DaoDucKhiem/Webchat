@@ -1,0 +1,50 @@
+.header {
+    height: 5vh;
+    margin-top: 0.8vh;
+    padding-bottom: 0.7vh;
+}
+
+p {
+    margin: 0;
+    padding: 2px;
+}
+
+.head-left {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 24px;
+    height: 100%;
+}
+
+.avatar {
+    margin-right: 5px;
+}
+
+.avatar img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 13px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.active {
+    font-size: 12px;
+    color: #757575;
+}
+
+.head-right {
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 100%;
+}
+
+.head-right div {
+    margin-right: 24px;
+}

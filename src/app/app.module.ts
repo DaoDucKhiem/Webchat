@@ -8,6 +8,9 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { LeftSideNavigationBarComponent } from './components/left-side-navigation-bar/left-side-navigation-bar.component';
 import { SearchConversationComponent } from './components/search-conversation/search-conversation.component';
 import { ConversationComponent } from './components/conversation/conversation.component';
+import { HeaderMessageComponent } from './components/header-message/header-message.component';
+import { MessageComponent } from './components/message/message.component';
+import { SendMessageComponent } from './components/send-message/send-message.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { ConversationComponent } from './components/conversation/conversation.co
     LeftSideNavigationBarComponent,
     SearchConversationComponent,
     ConversationComponent,
+    HeaderMessageComponent,
+    MessageComponent,
+    SendMessageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,19 @@
-<div class="conversation">
+<div class="conversation" *ngFor="let conversation of conversations">
     <div class="avatar">
         <div>
-            <img src="../../../assets/images/Avatar/2.jpg" alt="avatar-conversation">
+            <img [src]="conversation.image" alt="avatar-conversation">
             <span><img class="green-sphere" src="../../../assets/icons/IconAppChat/green_sphere.svg"
                     alt="avatar-conversation"></span>
         </div>
     </div>
     <div class="content">
         <div class="name">
-            <p class="name-conversation">nameGroup</p>
-            <p class="time">time</p>
+            <p class="name-conversation">{{conversation.name}}</p>
+            <p class="time">{{conversation.time}}</p>
         </div>
         <div class="last-message">
-            <p class="message-last">last message</p>
-            <span><p class="amount">3</p></span>
+            <p class="message-last">{{conversation.lastMessage}}</p>
+            <span class="new-message"><p class="amount">{{conversation.newMessage}}</p></span>
         </div>
     </div>
 </div>
