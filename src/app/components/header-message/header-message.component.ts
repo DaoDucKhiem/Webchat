@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header-message',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderMessageComponent implements OnInit {
 
+  @Output()  eventClickShow = new EventEmitter();
+  showAbout = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ShowAbout() {
+    this.showAbout = !this.showAbout;
+    this.eventClickShow.emit(this.showAbout);
+  }
 }

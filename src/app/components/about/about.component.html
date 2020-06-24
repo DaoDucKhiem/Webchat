@@ -11,20 +11,26 @@
     <div class="share-file">
         <div class="tittle">
             <p>TỆP ĐÃ CHIA SẺ</p>
-            <span class="icon-dropdown"><img src="../../../assets/icons/IconAppChat/13.svg" alt="dropdown"></span>
+            <span class="icon-dropdown" (click)="showAllFile()">
+                <img [src]="showFile ? icondropTrue : icondropFalse" alt="dropdown">
+            </span>
         </div>
-        <div class="file">
-            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Nội dung hội nghị.pdf</a></p>
-            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Quy trình cho nhân viên.pdf</a></p>
+        <div class="file" *ngIf="showFile">
+            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Nội dung
+                    hội nghị.pdf</a></p>
+            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Quy trình
+                    cho nhân viên.pdf</a></p>
         </div>
         <p class="line"></p>
     </div>
     <div class="share-img">
         <div class="tittle">
             <p>ẢNH ĐÃ CHIA SẺ</p>
-            <span class="icon-dropdown"><img src="../../../assets/icons/IconAppChat/13.svg" alt="dropdown"></span>
+            <span class="icon-dropdown" (click)="showAllImg()">
+                <img [src]="showImg ? icondropTrue : icondropFalse" alt="dropdown">
+            </span>
         </div>
-        <div class="img-share">
+        <div class="img-share" *ngIf="showImg">
             <div class="item1"><img src="../../../assets/images/Avatar/1.jpg" alt="image"></div>
             <div class="item1"><img src="../../../assets/images/Avatar/2.jpg" alt="image"></div>
             <div class="item1"><img src="../../../assets/images/Avatar/3.jpg" alt="image"></div>

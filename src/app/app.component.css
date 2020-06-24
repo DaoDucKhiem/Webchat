@@ -34,7 +34,6 @@ app-left-side-navigation-bar {
 .list-message {
     position: relative;
     height: 100%;
-    width: 788px;
 }
 
 .message {
@@ -42,6 +41,7 @@ app-left-side-navigation-bar {
 }
 
 app-send-message {
+    width: 100%;
     position: absolute;
     bottom: 0;
 }

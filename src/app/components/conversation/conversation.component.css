@@ -1,9 +1,15 @@
 .conversation {
-    padding: 8px 0;
+    margin-top: 10px;
+    padding: 10px 0;
     width: 100%;
     display: flex;
     align-items: center;
 }
+
+.conversation:hover {
+    background-color: #2f3f58;
+}
+
 
 p {
     margin: 0;
