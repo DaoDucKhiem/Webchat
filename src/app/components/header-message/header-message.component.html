@@ -10,7 +10,7 @@
     </div>
     <div class="head-right">
         <div><img src="../../../assets/icons/IconboxChat/8.svg" alt="search-icon"></div>
-        <div (click)="ShowAbout()"><img src="../../../assets/icons/IconAppChat/5.svg" alt="about-icon"></div>
+        <div (click)="ShowAbout()"><img [src]='showAbout ? "../../../assets/icons/IconAppChat/5.svg" : "../../../assets/icons/IconAppChat/6.svg"' alt="about-icon"></div>
         <div><img src="../../../assets/icons/IconAppChat/2.svg" alt="more-icon"></div>
     </div>
 </div>

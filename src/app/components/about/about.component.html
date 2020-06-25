@@ -16,10 +16,7 @@
             </span>
         </div>
         <div class="file" *ngIf="showFile">
-            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Nội dung
-                    hội nghị.pdf</a></p>
-            <p><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> Quy trình
-                    cho nhân viên.pdf</a></p>
+            <p *ngFor="let file of fileShared"><a href="#"><span><img src="../../../assets/icons/IconAppChat/pdf-icon.svg" alt="PDF"></span> {{file.name}}</a></p>
         </div>
         <p class="line"></p>
     </div>
@@ -30,12 +27,8 @@
                 <img [src]="showImg ? icondropTrue : icondropFalse" alt="dropdown">
             </span>
         </div>
-        <div class="img-share" *ngIf="showImg">
-            <div class="item1"><img src="../../../assets/images/Avatar/1.jpg" alt="image"></div>
-            <div class="item1"><img src="../../../assets/images/Avatar/2.jpg" alt="image"></div>
-            <div class="item1"><img src="../../../assets/images/Avatar/3.jpg" alt="image"></div>
-            <div class="item1"><img src="../../../assets/images/Avatar/4.jpg" alt="image"></div>
-            <div class="item1"><img src="../../../assets/images/Avatar/1.jpg" alt="image"></div>
+        <div *ngIf="showImg" class="img-share">
+            <div class="item1" *ngFor="let image of imageShared"><img [src]="image.img" alt="image"></div>
         </div>
     </div>
 </div>
